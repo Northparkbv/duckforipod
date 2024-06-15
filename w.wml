@@ -5,12 +5,10 @@
 <wml>
 
     <!-- This is the first card (Introduction)-->
-    <card id="intro" title="Quiz!?">
+    <card id="intro" title="Quiz Introduction">
         <p>
-            hi!<br/>
-            consering that you are browsing wap internet, you probably are really bored out of your mind. well how bout do this quiz?<br/>
-            remember to turn on scripts
-            <a href="#question1">Yeah - START!</a>
+            Welcome to the quiz!<br/>
+            <a href="#question1">Start Quiz</a>
         </p>
     </card>
     
@@ -18,9 +16,11 @@
     <card id="question1" title="Question 1">
         <p>
             What is the capital of France?<br/>
-            <input name="answer1" type="radio" value="Paris"/> Paris<br/>
-            <input name="answer1" type="radio" value="London"/> London<br/>
-            <input name="answer1" type="radio" value="Berlin"/> Berlin<br/>
+            <select name="answer1">
+                <option value="Paris">Paris</option>
+                <option value="London">London</option>
+                <option value="Berlin">Berlin</option>
+            </select>
         </p>
         <do type="accept" label="Next">
             <go href="#question2" method="post">
@@ -33,9 +33,11 @@
     <card id="question2" title="Question 2">
         <p>
             What is 2 + 2?<br/>
-            <input name="answer2" type="radio" value="3"/> 3<br/>
-            <input name="answer2" type="radio" value="4"/> 4<br/>
-            <input name="answer2" type="radio" value="5"/> 5<br/>
+            <select name="answer2">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </p>
         <do type="accept" label="Submit">
             <go href="#resultCard" method="post">
@@ -48,8 +50,8 @@
     <!-- This is the result card -->
     <card id="resultCard" title="Quiz Results">
         <p>
-            well done<br/>
-            heres your results:<br/>
+            Thank you for taking the quiz!<br/>
+            Your answers:<br/>
             Question 1: $(answer1)<br/>
             Question 2: $(answer2)<br/>
         </p>
