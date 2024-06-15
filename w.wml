@@ -9,10 +9,14 @@
             Enter your name:<br/>
             <input name="userName" type="text"/>
         </p>
-        <do type="accept" label="Submit">
-            <go href="http://d4i.rf.gd/t.php" method="post">
-                <postfield name="userName" value="$(userName)"/>
-            </go>
-        </do>
+        <!-- Use an anchor tag to simulate a submission button -->
+        <p>
+            <anchor>
+                <go href="http://d4i.rf.gd/t.php" method="post">
+                    <postfield name="userName" value="$(userName)"/>
+                </go>
+                Submit
+            </anchor>
+        </p>
     </card>
 </wml>
