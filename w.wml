@@ -1,23 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" 
+"-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
 
-<?xml version="1.0"?> 
-    <!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" 
-"-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml"> 
-  
-    <wml> 
-        
-        <!-- This is first card-->
-        <card id="one" title="First Card"> 
-            <h1> Geeksforgeeks </h1> 
-            <p> 
-                A Computer Science Portal for Geeks 
-            </p> 
-        </card> 
-         
-        <!-- This is second card-->
-        <card id="two" title="Second Card"> 
-            <p> 
-                This is created by WML 
-            </p> 
-        </card> 
-  
-    </wml> 
+<wml>
+    
+    <!-- This is the first card-->
+    <card id="one" title="First Card">
+        <h1>duckforipod mobile</h1>
+        <p>
+            well done for finding this page!<br/>
+            <a href="#two">Go to Second Card</a>
+        </p>
+    </card>
+     
+    <!-- This is the second card-->
+    <card id="two" title="Second Card">
+        <p>
+            This is created by WML<br/>
+            <a href="#one">Go back to First Card</a>
+        </p>
+    </card>
+
+</wml>
