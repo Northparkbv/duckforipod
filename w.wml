@@ -4,60 +4,17 @@
 
 <wml>
 
-    <!-- This is the first card (Introduction)-->
-    <card id="intro" title="Quiz Introduction">
+    <!-- This is the card with the form -->
+    <card id="formCard" title="Simple Form">
         <p>
-            Welcome to the quiz!<br/>
-            <a href="#question1">Start Quiz</a>
-        </p>
-    </card>
-    
-    <!-- This is the first question card -->
-    <card id="question1" title="Question 1">
-        <p>
-            What is the capital of France?<br/>
-            <select name="answer1">
-                <option value="Paris">Paris</option>
-                <option value="London">London</option>
-                <option value="Berlin">Berlin</option>
-            </select>
-        </p>
-        <do type="accept" label="Next">
-            <go href="#question2" method="post">
-                <postfield name="answer1" value="$(answer1)"/>
-            </go>
-        </do>
-    </card>
-    
-    <!-- This is the second question card -->
-    <card id="question2" title="Question 2">
-        <p>
-            What is 2 + 2?<br/>
-            <select name="answer2">
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+            Enter your message:<br/>
+            <input name="userName" type="text"/>
         </p>
         <do type="accept" label="Submit">
-            <go href="#resultCard" method="post">
-                <postfield name="answer1" value="$(answer1)"/>
-                <postfield name="answer2" value="$(answer2)"/>
+            <go href="http://d4i.rf.gd/t.php" method="post">
+                <postfield name="userName" value="$(userName)"/>
             </go>
         </do>
-    </card>
-    
-    <!-- This is the result card -->
-    <card id="resultCard" title="Quiz Results">
-        <p>
-            Thank you for taking the quiz!<br/>
-            Your answers:<br/>
-            Question 1: $(answer1)<br/>
-            Question 2: $(answer2)<br/>
-        </p>
-        <p>
-            <anchor title="Back to Start" href="#intro">Start Over</anchor>
-        </p>
     </card>
 
 </wml>
