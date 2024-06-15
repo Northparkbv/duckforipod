@@ -3,11 +3,10 @@
 "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
 
 <wml>
-
     <!-- This is the card with the form -->
     <card id="formCard" title="Simple Form">
         <p>
-            Enter your message:<br/>
+            Enter your name:<br/>
             <input name="userName" type="text"/>
         </p>
         <do type="accept" label="Submit">
@@ -16,5 +15,4 @@
             </go>
         </do>
     </card>
-
 </wml>
