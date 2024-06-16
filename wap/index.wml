@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+    <!-- Card 1: Home -->
+    <card id="home" title="Home">
+        <p>
+            <b>duckforipod mobile</b><br/><br/>
+            Categories:<br/>
+            <a href="#java_games">Java games</a><br/>
+            <a href="#midi_files">Midi files</a>
+        </p>
+    </card>
+
+    <!-- Card 2: Java games -->
+    <card id="java_games" title="Java Games">
+        <p>
+            Select your Java game:<br/>
+            <a href="Brick Breaker Revolution (208x208) Nokia 6230i-296786.jad">Brick Breaker Revolution</a><br/>
+            <a href="#home">Back to Home</a>
+        </p>
+    </card>
+
+    <!-- Card 3: Midi files -->
+    <card id="midi_files" title="MIDI Files">
+        <p>
+            Songs available:<br/>
+            None lol <br />
+            <a href="#home">Back to Home</a>
+        </p>
+    </card>
+</wml>
