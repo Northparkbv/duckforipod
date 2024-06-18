@@ -6,19 +6,25 @@
     <card id="home" title="Home">
         <p>
             <b>duckforipod mobile</b><br/><br/>
+            Notice: currently there are no java games and midi files. Damn, check again later!
             Categories:<br/>
             <a href="#java_games">Java games</a><br/>
             <a href="#midi_files">Midi files</a>
+        
         </p>
     </card>
 
     <!-- Card 2: Java games -->
     <card id="java_games" title="Java Games">
         <p>
-            Select your Java game:<br/>
-            <a href="Brick Breaker Revolution (208x208) Nokia 6230i-296786.jad">Brick Breaker Revolution</a><br/>
-            <a href="#home">Back to Home</a>
+            You know, i'm probably gonna remove this because I don't have a clue on how to host java games.
         </p>
+        <table>
+            <tr>
+                <td>---</td>
+                <td><a href="#home">Back</td>
+            </tr>
+        </table>
     </card>
 
     <!-- Card 3: Midi files -->
@@ -26,7 +32,12 @@
         <p>
             Songs available:<br/>
             None lol <br />
-            <a href="#home">Back to Home</a>
         </p>
+                <table>
+            <tr>
+                <td>---</td>
+                <td><a href="#home">Back</td>
+            </tr>
+        </table>
     </card>
 </wml>
